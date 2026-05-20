@@ -1,0 +1,318 @@
+.machines-container {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    margin: 20px;
+}
+
+.machines-container h2 {
+    margin: 0 0 20px 0;
+    color: #1f2937;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.btn-add {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(16, 185, 129, 0.3);
+}
+
+.btn-add:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4);
+}
+
+.btn-add:active {
+    transform: translateY(0);
+}
+
+.machine-form {
+    background-color: #f9fafb;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #e5e7eb;
+}
+
+.machine-form input,
+.machine-form select,
+.machine-form textarea {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: inherit;
+    transition: all 0.3s ease;
+}
+
+.machine-form input:focus,
+.machine-form select:focus,
+.machine-form textarea:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.machine-form textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    color: #374151;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.btn-submit {
+    background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin-right: 10px;
+}
+
+.btn-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+.btn-cancel {
+    background-color: #e5e7eb;
+    color: #374151;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-cancel:hover {
+    background-color: #d1d5db;
+}
+
+.machine-list {
+    margin-top: 20px;
+}
+
+.machine-item {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.machine-item:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.machine-info h4 {
+    margin: 0 0 4px 0;
+    color: #1f2937;
+    font-size: 16px;
+}
+
+.machine-info p {
+    margin: 2px 0;
+    color: #6b7280;
+    font-size: 13px;
+}
+
+.machine-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.btn-edit,
+.btn-delete {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-edit {
+    background-color: #dbeafe;
+    color: #1e40af;
+}
+
+.btn-edit:hover {
+    background-color: #bfdbfe;
+}
+
+.btn-delete {
+    background-color: #fee2e2;
+    color: #dc2626;
+}
+
+.btn-delete:hover {
+    background-color: #fecaca;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+.machines-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.machines-table thead {
+    background-color: #f3f4f6;
+}
+
+.machines-table th {
+    padding: 12px;
+    text-align: left;
+    color: #374151;
+    font-weight: 600;
+    border-bottom: 2px solid #e5e7eb;
+    font-size: 13px;
+}
+
+.machines-table td {
+    padding: 12px;
+    border-bottom: 1px solid #e5e7eb;
+    color: #6b7280;
+    font-size: 13px;
+}
+
+.machines-table tbody tr:hover {
+    background-color: #f9fafb;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .machines-container {
+        padding: 16px;
+        margin: 10px;
+    }
+
+    .machine-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .machine-actions {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .table-container {
+        font-size: 12px;
+    }
+
+    .machines-table th,
+    .machines-table td {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .machines-container {
+        padding: 12px;
+        margin: 5px;
+    }
+
+    .btn-add {
+        width: 100%;
+    }
+
+    .btn-submit,
+    .btn-cancel {
+        width: 100%;
+        margin-bottom: 8px;
+        margin-right: 0;
+    }
+}
+
+.machines-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.machines-table tr:hover {
+    background-color: #f5f5f5;
+}
+
+.status {
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.status.active {
+    background-color: #28a745;
+    color: white;
+}
+
+.status.inactive {
+    background-color: #6c757d;
+    color: white;
+}
+
+.status.maintenance {
+    background-color: #ffc107;
+    color: #333;
+}
+
+.status.breakdown {
+    background-color: #dc3545;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .machines-container {
+        padding: 15px;
+    }
+
+    .machine-form input {
+        font-size: 16px; /* Prevents zoom on iOS */
+    }
+
+    .machines-table {
+        font-size: 12px;
+    }
+
+    .machines-table th,
+    .machines-table td {
+        padding: 8px;
+    }
+}
